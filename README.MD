@@ -20,7 +20,7 @@
 
 1. 下载 CoolQ Pro 并且安装 [CQ HTTP API](https://cqhttp.cc/docs/4.11/#/) 插件，详见文档
 2. 在 `config.py` 中填写 CQ HTTP API 监听的地址
-3. 在 `plugins/pixiv_config.py` 中填写 Pixiv 的相关信息
+3. 在 `plugins/pixiv.py` 中填写 Pixiv 的相关信息
 4. 执行 `python bot.py`
 
 ## 注意事项

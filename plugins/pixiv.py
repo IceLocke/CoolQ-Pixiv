@@ -2,18 +2,17 @@ from nonebot import on_command, CommandSession, permission, helpers
 from urllib.request import HTTPError
 from pixivpy3 import *
 import requests
-import pixiv_config
 import random
 import re
 import os
 
 
 # 初始化参数
-_USERNAME = pixiv_config.USERNAME
-_PASSWORD = pixiv_config.PASSWORD
-_USERID = pixiv_config.USERID
-_CQP_IMG_URL = pixiv_config.CQP_IMG_URL
-_PROXIES = pixiv_config.PROXIES
+_USERNAME = 'Pixiv的用户名'
+_PASSWORD = 'Pixiv的密码'
+_USERID = '用于获取书签列表的PixivID，可以填一个收藏setu比较多的人的'
+_CQP_IMG_URL = '酷Q存储图片的文件夹，例如.../data/image/，image后面一定要加个/'
+_PROXIES = {'https': '你的代理地址'}
 headers = {
     'Referer': 'https://app-api.pixiv.net',
     'User-Agent': 'User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36"'
